@@ -35,6 +35,7 @@ add_executable(Debt-o-meter
     ${SOURCE_DIR}/mainwindow.cpp
     ${SOURCE_DIR}/mainwindow.h
     ${SOURCE_DIR}/mainwindow.ui
+    ${SOURCE_DIR}/debt.hxx
     ${SOURCE_DIR}/debt.cxx
 )
 
