@@ -51,11 +51,3 @@ class debt{
             printf("  %d: $%.2f\n", i, interests[i]);
     }
 };
-
-int main(){
-    debt bbva(15000, 6057.84, 76289.39);
-    bbva.print_debt();
-    bbva.print_minPayments();
-    bbva.print_interests();
-    return 0;
-}
