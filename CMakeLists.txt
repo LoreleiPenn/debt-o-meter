@@ -39,4 +39,4 @@ add_executable(Debt-o-meter
     ${SOURCE_DIR}/debt.cxx
 )
 
-target_link_libraries(Debt-o-meter PRIVATE Qt5::Widgets)
+target_link_libraries(Debt-o-meter PRIVATE Qt5::Widgets Qt5::Charts)
