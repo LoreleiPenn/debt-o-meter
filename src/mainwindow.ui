@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>908</width>
+    <height>654</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_pay"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_pay">
+            <property name="maximum">
+             <double>10000000000.000000000000000</double>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -56,7 +60,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_min_pay"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_min_pay">
+            <property name="maximum">
+             <double>1000000000.000000000000000</double>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -83,7 +91,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="doubleSpinBox_total"/>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_total">
+            <property name="maximum">
+             <double>10000000000.000000000000000</double>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -134,8 +146,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>23</height>
+     <width>908</width>
+     <height>27</height>
     </rect>
    </property>
   </widget>
