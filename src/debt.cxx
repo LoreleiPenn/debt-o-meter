@@ -21,7 +21,10 @@ void debt::paymentPlan(double pay, double mp_0, double t, int maxiter=100){
     }
     movements = iter;
 }
-debt::debt(double pay, double mp_0, double total, int maxiter=100){
+debt::debt(double pay, double mp_0, double total){
+    paymentPlan(pay, mp_0, total);
+}
+debt::debt(double pay, double mp_0, double total, int maxiter){
     paymentPlan(pay, mp_0, total, maxiter);
 }
 void debt::updatePaymentPlan(double pay, double mp_0, double total, int maxiter=100){
@@ -41,4 +44,16 @@ void debt::print_interests(){
     std::cout << "Total interests:" << std::endl;
     for(int i = 0; i < movements; i++)
         printf("  %d: $%.2f\n", i, interests[i]);
+}
+double debt::get_total(int month){
+    return total[month];
+}
+double debt::get_min_pays(int month){
+    return min_pays[month];
+}
+double debt::get_interests(int month){
+    return interests[month];
+}
+int debt::get_movements(){
+    return movements;
 }
